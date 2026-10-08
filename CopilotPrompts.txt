@@ -1,0 +1,5 @@
+1. Using mcp server, liquibase-changelog-mcp-server, create a table named sampleTable1 with 4 columns: ID, firstname, lastname, address. Produce this script in liquibase formatted sql. Place the resulting script in a new "tables" directory. In changelog.xml file, create a "include" reference to this script.
+
+2. Using mcp server, liquibase-changelog-mcp-server, create a table named sampleProducts with 4 columns: ID, productName, SKU, Price. Produce this script in liquibase formatted sql. Place the resulting script in a new "tables" directory. In changelog.xml file, create a "include" reference to this script.
+
+3. Using mcp server, liquibase-changelog-mcp-server, add 100 rows of sample data to the SampleProducts table. Produce this script in liquibase formatted sql. Place the resulting script in a new "data" directory. In changelog.xml file, create a "include" reference to this script. All data scripts should run after tables scripts.

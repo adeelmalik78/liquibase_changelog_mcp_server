@@ -1,0 +1,20 @@
+{
+  "servers": {
+    "liquibase-changelog-mcp-server": {
+      "type": "stdio",
+      "command": "java",
+      "args": [
+        "-jar",
+        "/Users/adeelmalik/Downloads/liquibase-mcp-changelog-server-1.0.0.jar"
+      ],
+      "env": {
+        "LIQUIBASE_LICENSE_KEY": "<license_key>",
+        "LIQUIBASE_MCP_OUTPUT_FORMAT": "formatted-sql",
+        "LIQUIBASE_MCP_SQL_DATABASE": "postgresql",
+        "LIQUIBASE_MCP_INCLUDE_ROLLBACK": "true",
+        "LIQUIBASE_MCP_DISABLE_VALIDATION": "false"
+
+      }
+    }
+  }
+}
